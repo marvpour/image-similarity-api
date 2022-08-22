@@ -15,5 +15,4 @@ COPY app.py .
 COPY src .
 COPY in .
 
-# COPY . ./XGEN 
 CMD [ "python" , "./app.py" ]
