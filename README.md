@@ -2,13 +2,13 @@
 
 Project for finding 10 most similar images
 
-# Assumptions
+# Notes
 
  The first time it is running, takes around 2h to dowanload all the images.
- 
+ The POST request takes a url as the body and will return 10 links that are closest to the input image link.
 
 
-### Install Conda
+### Running
 
 You can install Anaconda or Miniconda.
 
