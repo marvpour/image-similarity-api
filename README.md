@@ -2,7 +2,11 @@
 
 Project for finding 10 most similar images
 
-## Conda
+# Assumptions
+
+ The first time it is running, takes around 2h to dowanload all the images.
+ 
+
 
 ### Install Conda
 
