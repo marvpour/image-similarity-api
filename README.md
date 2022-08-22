@@ -1,4 +1,4 @@
-# onboarding-server
+# Image Similarity
 
 Project for finding 10 most similar images
 
@@ -37,24 +37,6 @@ to start the server.
 
 Note: make sure to change account and version numbers as needed
 
-### Build and Push (local)
+### Build (local)
 
-docker build -t localintelcr.azurecr.io/onboarding-server:1.0.0 .
-
-docker login localintelcr.azurecr.io
-
-docker push localintelcr.azurecr.io/onboarding-server:1.0.0
-
-### Pull and Start (VM)
-
-sudo docker login localintelcr.azurecr.io
-
-sudo docker pull localintelcr.azurecr.io/onboarding-server:1.0.0
-
-sudo docker stop onboarding-server
-
-sudo docker rm onboarding-server
-
-sudo docker run -d -p 5562:5562 --restart=always --name=onboarding-server localintelcr.azurecr.io/onboarding-server:1.0.0
-
-Note: you may want to mount the logs, instance, and tmp directories onto your local machine (use the -v, e.g. -v /home/localintel/onboarding-server/instance:/onboarding-server/instance)
+docker build -t home-assessment:1.0.0 .
