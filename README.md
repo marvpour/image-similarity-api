@@ -33,7 +33,7 @@ versions added and that some channels may be missing.
 
 ## Running
 
-Activate your Conda environment by running ```conda activate onboarding-server```. Then run ```python app.py```
+Activate your Conda environment by running ```conda activate image-similarity```. Then run ```python app.py```
 to start the server.
 
 
