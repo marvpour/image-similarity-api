@@ -32,7 +32,6 @@ def app_runner():
 
     if model_name not in ['VGG-TL', 'tensorflow-hub']:
         raise(f'{model_name} model has not been implemented yet! Please choose from tensorflow-hub or VGG-TL' )
-    print(model_name)
 
     return '\n'.join(show_similar_images(input_image_url, model_name))
     
