@@ -10,9 +10,9 @@ def download_images(app):
             (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'}
 
 
-    iamge_list = pd.read_csv('/'.join([app.config['IN_DIR'], 'valentino_images.csv']))[-10:]['image'].tolist()
+    image_list = pd.read_csv('/'.join([app.config['IN_DIR'], 'valentino_images.csv']))['image'].tolist()
 
-    for link in iamge_list:
+    for link in image_list:
         name = link.split(PREFIX)[1].replace('/', '____')
         r = requests.get(link, headers = headers, timeout=(20,1000))
         open(f"{app.config['IN_DIR']}/images/{name}", 'wb').write(r.content)

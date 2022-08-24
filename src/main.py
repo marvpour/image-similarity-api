@@ -19,16 +19,22 @@ def json_response(obj, response_code=200):
 def success():
     return 'Welcome to onboarding server!'
 
-@app.route('/get-similar-images', methods=['POST', 'GET'])
+@app.route('/get-similar-images', methods=['POST'])
 def app_runner():
-    if request.method == 'POST':
-        input_image_url = ''
-        body = request.get_json()
+    input_image_url = ''
+    model = 'tensorflow-hub'
+    body = request.get_json()
 
-        if body is not None:
-            input_image_url = body.get('input_image_url', input_image_url)
+    if body is not None:
+        input_image_url = body.get('input_image_url', input_image_url)
+        model_name = body.get('model', model)
 
-        return '\n'.join(show_similar_images(input_image_url))
+
+    if model_name not in ['VGG-TL', 'tensorflow-hub']:
+        raise(f'{model_name} model has not been implemented yet! Please choose from tensorflow-hub or VGG-TL' )
+    print(model_name)
+
+    return '\n'.join(show_similar_images(input_image_url, model_name))
     
 
 def main():
