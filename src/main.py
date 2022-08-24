@@ -67,9 +67,5 @@ def main():
         logger = logging.getLogger()
         logger.addHandler(handler)
         app.logger.setLevel(logging.INFO)
-
-        # Using waitress in production.
-        # Note that the way waitress works is it spawns a certain number of threads (by default 4) and then can only
-        # handle that many requests at once. Any more requests will get queued and will run once a prior request
-        # finishes.
+        
         serve(app, host=host, port=port)
