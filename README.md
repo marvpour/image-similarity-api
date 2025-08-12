@@ -8,9 +8,10 @@ This project provides an API that, given an image URL, returns the 10 most visua
 
 ## 🔥 Example
 When searching for this white sneakers:
-<img src="images/image_for_search.jpg" alt="Original image" width="50%" />
+<img src="images/image_for_search.jpg" alt="Original image" width="20%" />
+
 Here are the first 3 results:
-<img src="images/image_1.png" alt="1st results" width="50%" /> <img src="images/image_2.png" alt="2nd results" width="50%" /> <img src="images/image_3.png" alt="3rd results" width="50%" />
+<img src="images/image_1.png" alt="1st results" width="20%" /> <img src="images/image_2.png" alt="2nd results" width="20%" /> <img src="images/image_3.png" alt="3rd results" width="20%" />
 
 
 ## 🚀 Features
