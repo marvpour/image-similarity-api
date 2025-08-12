@@ -6,6 +6,13 @@ Find the 10 most visually similar images for any given image URL
 
 This project provides an API that, given an image URL, returns the 10 most visually similar images from a pre-downloaded dataset. It uses deep learning–based image embeddings to compare images and rank them by similarity.
 
+## 🔥 Example
+When searching for this white sneakers:
+<img src="image_for_search.jpg" alt="Original image" width="50%" />
+Here are the first 3 results:
+<img src="image_3.png" alt="1st results" width="50%" /> <img src="image_3.png" alt="2nd results" width="50%" /> <img src="image_3.png" alt="3rd results" width="50%" />
+
+
 ## 🚀 Features
 - **Image Similarity Search** – Returns top 10 visually similar images for a given input image.
 - **Pre-Indexed Dataset** – Images are preprocessed and embedded for faster retrieval.
