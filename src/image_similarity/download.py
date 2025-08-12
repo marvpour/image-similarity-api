@@ -1,7 +1,7 @@
 import pandas as pd
 import requests
 
-PREFIX = 'https://www.valentino.com/'
+PREFIX = '' # fill with url prefix
 
 def download_images(app):
 
@@ -10,7 +10,7 @@ def download_images(app):
             (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'}
 
 
-    image_list = pd.read_csv('/'.join([app.config['IN_DIR'], 'valentino_images.csv']))['image'].tolist()
+    image_list = pd.read_csv('/'.join([app.config['IN_DIR'], 'images.csv']))['image'].tolist()
 
     for link in image_list:
         name = link.split(PREFIX)[1].replace('/', '____')
